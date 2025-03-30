@@ -4,29 +4,29 @@ float num1, num2;
 char operator;
 
 int main() {
-    printf("Wpisz pierwszą liczbę: ");
+    printf("Enter the first number: ");
     scanf("%f", &num1);
 
-    printf("Wpisz (+)/(-)/(*)/(/): ");
+    printf("Enter an operator (+)/(-)/(*)/(/): ");
     scanf(" %c", &operator);
 
-    printf("Wpisz drugą liczbę: ");
+    printf("Enter the second number: ");
     scanf("%f", &num2);
 
     if (operator == '+') {
-        printf("Wynik: %f\n", num1 + num2);
+        printf("Result: %f\n", num1 + num2);
     } else if (operator == '-') {
-        printf("Wynik: %f\n", num1 - num2);
+        printf("Result: %f\n", num1 - num2);
     } else if (operator == '*') {
-        printf("Wynik: %f\n", num1 * num2);
+        printf("Result: %f\n", num1 * num2);
     } else if (operator == '/') {
         if (num2 != 0) {
-            printf("Wynik: %f\n", num1 / num2);
+            printf("Result: %f\n", num1 / num2);
         } else {
-            printf("Błąd: dzielenie przez zero!\n");
+            printf("Error: division by zero!\n");
         }
     } else {
-        printf("Niepoprawny operator!\n");
+        printf("Invalid operator!\n");
     }
 
     return 0;
